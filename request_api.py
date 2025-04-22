@@ -45,12 +45,18 @@ def create_prompt(table, state):
 		{"role" : "user", "content" : promp_usr}
 	])
 
-def save_rapport(promps, rapport, id):
-	date_now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-	file_name = f"report/{id}/rapport_{date_now}.json"
-	with open(file_name, "w") as file:
-		file.write(json.dumps({"prompt" : {"user" : promps[1]['content'], "system" : promps[0]['content']}, "rapport" : rapport}, indent=4))
+import os
 
+def save_rapport(promps, rapport, id):
+    date_now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    file_name = f"report/{id}/rapport_{date_now}.json"
+    
+    # Création du dossier si nécessaire
+    os.makedirs(f"report/{id}", exist_ok=True)
+    
+    # Écriture du rapport dans le fichier JSON
+    with open(file_name, "w") as file:
+        file.write(json.dumps({"prompt": {"user": promps[1]['content'], "system": promps[0]['content']}, "rapport": rapport}, indent=4))
 
 def get_rapport(table, id):
     try:

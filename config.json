@@ -2,41 +2,41 @@
     "us": {
         "chanelid": "2",
         "country": "united states",
-        "last": 455687
+        "last": 455777
     },
     "euro": {
         "chanelid": "8",
         "country": "euro area",
-        "last": 455586
+        "last": 455743
     },
     "uk": {
         "chanelid": "10",
         "country": "united kingdom",
-        "last": 0
+        "last": 455735
     },
     "nl": {
         "chanelid": "19",
         "country": "netherlands",
-        "last": 0
+        "last": 455528
     },
     "aud": {
         "chanelid": "21",
         "country": "australia",
-        "last": 0
+        "last": 455715
     },
     "chf": {
         "chanelid": "22",
         "country": "switzerland",
-        "last": 0
+        "last": 455744
     },
     "jp": {
         "chanelid": "14",
         "country": "japan",
-        "last": 0
+        "last": 455734
     },
     "nz": {
         "chanelid": "31",
         "country": "new zealand",
-        "last": 0
+        "last": 455719
     }
 }
